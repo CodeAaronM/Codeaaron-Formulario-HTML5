@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/styles.css">
+    <script src="https://kit.fontawesome.com/5fdd67bd0e.js" crossorigin="anonymous"></script>
+</head>
+</head>
+
+<body class="bg-black">
+
+    <div class="container bg-white p-3">
+
+        <form>
+
+            <div class="card" style="width: auto;">
+                <div class="card-header">
+                    Payment For Example
+                </div>
+
+                <div class="card-body">
+
+                    <div class="alert alert-danger" role="alert">
+                        Some fields are missing
+                    </div>
+
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class=" d-flex flex-column align-items-start mb-3">
+                                    <label for="tarjeta" class="form-label ">Card #</label>
+                                    <input type="text" class="form-control" id="tarjeta"
+                                        placeholder="xxxx-xxxx-xxxx-xxxx-xxxx">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class=" d-flex flex-column align-items-start mb-3">
+                                    <label for="cvc" class="form-label ">CVC #</label>
+                                    <input type="text" class="form-control" id="cvc" placeholder="0000">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class=" d-flex flex-column align-items-start mb-3">
+                                    <label for="amount" class="form-label ">Amount</label>
+                                    <div class=" d-flex align-items-start mb-3">
+                                        <i class="fa-solid fa-dollar-sign"></i>
+                                        <input type="text" class="form-control" id="amount" placeholder="Amount">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class=" d-flex flex-column align-items-start mb-3">
+                                    <label for="first" class="form-label ">First name</label>
+                                    <input type="text" class="form-control" id="first">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class=" d-flex flex-column align-items-start mb-3">
+                                    <label for="last" class="form-label ">Last name</label>
+                                    <input type="text" class="form-control" id="last">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class=" d-flex flex-column align-items-start mb-3">
+                                    <label for="city" class="form-label ">City</label>
+                                    <input type="text" class="form-control" id="city">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class=" d-flex flex-column align-items-start mb-3">
+                                    <label for="state" class="form-label ">State</label>
+                                    <select id="state" class="form-select" aria-placeholder="Default select example">
+                                        <option selected>Pick a state</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class=" d-flex flex-column align-items-start mb-3">
+                                    <label for="postal" class="form-label ">Postal code</label>
+                                    <input type="text" class="form-control" id="postal">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class=" d-flex flex-column align-items-start mb-3">
+                                <label class="form-label ">We accept:</label>
+                                <div class=" d-flex align-items-start mb-3 bg-secondary p-2 ps-4 rounded-3" style="width: fit-content;">
+
+                                    <div class="form-check form-check-inline ">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-paypal"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-cc-apple-pay"></i></label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-6">
+                                <div class=" d-flex flex-column align-items-start mb-3">
+                                    <label for="Message" class="form-label ">Message</label>
+                                    <textarea class="w-100 rounded-3" id="Message" style="height: 100px;"></textarea>
+                                    <p class="card-text"><small class="text-body-secondary">Add Any notes here.</small></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="card-footer">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-secondary me-md-2" type="button">Button</button>
+                        <button class="btn btn-primary" type="button">Button</button>
+                    </div>
+                </div>
+
+        </form>
+
+    </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
